@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
-      return  gulp.src('app/scss/style.scss')
+      return  gulp.src('app/scss/**/*.scss')
         .pipe(sass())
         .pipe(rename({suffix : '.min'}))
         .pipe(autoprefixer({
@@ -48,7 +48,7 @@ gulp.task('style', function(){
 });
 
 gulp.task('watch', function(){
-gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
 gulp.watch('app/*.html', gulp.parallel('html'))
 gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
