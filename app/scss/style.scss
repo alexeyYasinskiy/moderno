@@ -187,7 +187,7 @@
         align-items: center;
     }
     &-author{    
-        min-width: 300px;
+        max-width: 245px;
         a{
             display: flex;
             align-items: center;
@@ -208,6 +208,11 @@
             margin-left: 10px;
         }
     }
+    &-star{
+        span{
+            color: $bg;
+        }
+    }
     
 }
 
@@ -225,6 +230,39 @@
     }
 }
 
-
+.jq-ry-normal-group{
+    display: none;
+}
 
 //end products
+//start product-slider
+
+.product-slider{
+    padding: 120px 0;
+    .slick-dots{
+        text-align: center;
+        li{
+            display: inline-block;
+            margin-right: 3px;
+            margin-left: 3px;
+            &.slick-active{
+                button{
+                   background-color: $green; 
+                }
+                
+            }
+            button{
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                font-size: 0;
+                background-color: #e8e8e8;
+                border: none;
+            }
+        }
+    }
+}
+
+//end product-slider
+
