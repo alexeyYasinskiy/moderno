@@ -360,3 +360,30 @@
 }
 
 //end author
+//start tutorial
+.tutorial{
+    padding: 75px 0 160px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        max-width: 370px;
+        img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 270px;
+        }
+    }
+    &__item{
+        margin: 0 15px;
+    }
+    &__text{
+        @include f700;
+        font-size: 24px;
+        line-height: 60px;
+        color: $bg;
+        text-align: center;
+    }
+}
+
+//end tutorial
